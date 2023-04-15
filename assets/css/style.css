@@ -526,65 +526,86 @@ section {
   text-align: center;
   padding: 50px;
   transition: all ease-in-out 0.3s;
-  background:var(--dune);
-  box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.08);
+  background:var(--edward);
   color: white;
   border-radius: 5px;
   height: 100%;
+  align-items: center;
+  vertical-align: middle;
 }
 
-.what-we-do .icon-box p{
+/* .what-we-do .icon-box p{
   text-align: left;
-}
-.what-we-do .icon-box h6{
-  text-align: justify;
-}
+} */
 
 .what-we-do .icon-box .icon {
   margin: 0 auto;
-  width: 64px;
-  height: auto;
-  background: white;
-  border-radius: 50px;
+  /* background: white; */
+  /* border-radius: 50px; */
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
   transition: ease-in-out 0.3s;
 }
 
-
+.what-we-do .icon-box .icon-title{
+  font-weight: 700;
+  font-size: 24px;
+  transition: ease-in-out 0.3s;
+  align-items: center;
+  vertical-align: middle;
+  display: none;
+  margin-top: 20%;
+}
+.what-we-do .icon-box:hover{
+  background-color: var(--amber);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.09);
+  transform: scale(1.01);
+}
+.what-we-do .icon-box:hover .icon{
+  transition: ease-in-out 0.3s;
+  display: none;  
+  transition: 0.3s ease-in-out;
+}
+.what-we-do .icon-box:hover .icon-title{
+  display: inline-block;
+  vertical-align: middle;
+  transition: 0.3s ease-in;
+  color: var(--dune);
+}
 .what-we-do .icon-box .icon .construction,
 .what-we-do .icon-box .icon .architectural,
 .what-we-do .icon-box .icon .engineering,
 .what-we-do .icon-box .icon .itsolutions {
-  width: 50px;
+  width: 100px;
 }
 
-.what-we-do .icon-box h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
-}
 
 .what-we-do .icon-box h4 a {
   color: white;
   transition: ease-in-out 0.3s;
 }
-
+/* 
 .what-we-do .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
-}
+} */
 
-.what-we-do .icon-box:hover {
-  /* background: var(--amber); */
+/* .what-we-do .icon-box:hover {
+  background: var(--amber);
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transform: scale(1.00);
   -webkit-box-shadow: 0 0 10px var(--dune);
   box-shadow: 0 0 25px var(--dune);
-}
+} */
+/* 
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 9999s, opacity 0.1s linear;
+} */
+
 
 /*--------------------------------------------------------------
 # About
